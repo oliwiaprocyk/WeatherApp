@@ -13,7 +13,7 @@ class WeatherService {
     
     func getWeather(cityName: String, completion: @escaping((WeatherModel?, String?)->())) {
         
-        let urlString = "\(APIConstants.baseURL)&q=\(cityName)"
+        let urlString = "\(APIConstants.baseURL)?appid=\(APIConstants.apiKey)\(APIConstants.unitMetric)&q=\(cityName)"
         
         NetworkManager.shared.request(type: WeatherModel.self,
                                       url: urlString,
