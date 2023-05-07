@@ -14,7 +14,7 @@ class LocationService {
     
     func getLocation(latitude: CLLocationDegrees, longitute: CLLocationDegrees, completion: @escaping((WeatherModel?, String?)->())) {
         
-        let urlString = "\(APIConstants.baseURL)?appid=\(APIConstants.unitMetric)&lat=\(latitude)&lon=\(longitute)"
+        let urlString = "\(APIConstants.baseURL)?appid=\(APIConstants.apiKey)\(APIConstants.unitMetric)&lat=\(latitude)&lon=\(longitute)"
         
         NetworkManager.shared.request(type: WeatherModel.self,
                                       url: urlString,
