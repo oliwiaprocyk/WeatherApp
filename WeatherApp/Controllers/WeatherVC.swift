@@ -207,14 +207,14 @@ extension WeatherVC: CLLocationManagerDelegate {
 extension WeatherVC: WeatherVMDelegate {
     func success() {
         DispatchQueue.main.async {
-            self.windLabel.text = String(format:"%.1fkm", self.viewModel.weather?.wind?.speed ?? 0)
+            self.windLabel.text = String(format:"%.1fm/s", self.viewModel.weather?.wind?.speed ?? 0)
             self.rainLabel.text = "\(self.viewModel.weather?.clouds?.all ?? 0)%"
-            self.degreeLabel.text = String(format:"%.1f°C", self.viewModel.weather?.main?.temp ?? 0)
+            self.degreeLabel.text = String(format:"%.0f°C", self.viewModel.weather?.main?.temp ?? 0)
             self.locationLabel.text = "\(self.viewModel.weather?.name ?? "")"
-            self.weatherConditionsView.feelsLikeDegreeLabel.text = String(format:"%.1f°C", self.viewModel.weather?.main?.feelsLike ?? 0)
-            self.weatherConditionsView.minTempDegreeLabel.text = String(format:"%.1f°C", self.viewModel.weather?.main?.tempMin ?? 0)
-            self.weatherConditionsView.maxTempDegreeLabel.text = String(format:"%.1f°C", self.viewModel.weather?.main?.tempMax ?? 0)
-            self.weatherConditionsView.windySpeedLabel.text = "\(self.viewModel.weather?.wind?.speed ?? 0)m/s"
+            self.weatherConditionsView.feelsLikeDegreeLabel.text = String(format:"%.0f°C", self.viewModel.weather?.main?.feelsLike ?? 0)
+            self.weatherConditionsView.minTempDegreeLabel.text = String(format:"%.0f°C", self.viewModel.weather?.main?.tempMin ?? 0)
+            self.weatherConditionsView.maxTempDegreeLabel.text = String(format:"%.0f°C", self.viewModel.weather?.main?.tempMax ?? 0)
+            self.weatherConditionsView.windySpeedLabel.text = String(format:"%.1fm/s", self.viewModel.weather?.wind?.speed ?? 0)
             self.weatherConditionsView.cloudLevelLabel.text = "\(self.viewModel.weather?.clouds?.all ?? 0)%"
             self.weatherConditionsView.visibilityLabel.text = "\(self.viewModel.weather?.visibility ?? 0)m"
             self.weatherConditionsSecondView.humidityLevelLabel.text = "\(self.viewModel.weather?.main?.humidity ?? 0)%"

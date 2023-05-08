@@ -13,7 +13,6 @@ struct WeatherModel: Codable {
     let visibility: Int?
     let wind: Wind?
     let clouds: Clouds?
-    let weather: [Weather]?
 }
 
 struct Main: Codable {
@@ -32,10 +31,6 @@ struct Main: Codable {
         case pressure
         case humidity
     }
-}
-
-struct Weather: Codable {
-    let id: Int?
 }
 
 struct Wind: Codable {
