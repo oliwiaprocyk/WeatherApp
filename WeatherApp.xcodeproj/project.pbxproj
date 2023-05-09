@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A4054B5D2A06F1F9007ACE98 /* OPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4054B5C2A06F1F9007ACE98 /* OPTextField.swift */; };
-		A4121A112A067BE8008ABA03 /* OPButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4121A102A067BE8008ABA03 /* OPButton.swift */; };
+		A4121A112A067BE8008ABA03 /* OPSymbolButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4121A102A067BE8008ABA03 /* OPSymbolButton.swift */; };
 		A4121A152A068AFA008ABA03 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4121A142A068AFA008ABA03 /* NetworkManager.swift */; };
 		A4121A192A068B7A008ABA03 /* HTTPMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4121A182A068B7A008ABA03 /* HTTPMethods.swift */; };
 		A4121A1B2A068BA3008ABA03 /* ErrorTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4121A1A2A068BA3008ABA03 /* ErrorTypes.swift */; };
@@ -19,6 +19,9 @@
 		A4121A292A0697F4008ABA03 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4121A282A0697F4008ABA03 /* LocationService.swift */; };
 		A45D08BF2A08332100E07522 /* WeatherConditionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45D08BE2A08332100E07522 /* WeatherConditionsView.swift */; };
 		A45D08C12A083FD900E07522 /* WeatherConditionsSecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45D08C02A083FD900E07522 /* WeatherConditionsSecondView.swift */; };
+		A45E38792A0A6426006A482A /* OPButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45E38782A0A6426006A482A /* OPButton.swift */; };
+		A45F04682A094FF7008B2A0B /* FortuneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45F04672A094FF7008B2A0B /* FortuneModel.swift */; };
+		A45F046A2A0952A4008B2A0B /* OPMiddleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45F04692A0952A4008B2A0B /* OPMiddleLabel.swift */; };
 		A491C3862A07B5F000C22347 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A491C3852A07B5F000C22347 /* Constants.swift */; };
 		A4D484072A03CAD4001F0E7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D484062A03CAD4001F0E7A /* AppDelegate.swift */; };
 		A4D484092A03CAD4001F0E7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D484082A03CAD4001F0E7A /* SceneDelegate.swift */; };
@@ -29,11 +32,12 @@
 		A4D484292A03FF38001F0E7A /* OPDegreeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D484282A03FF38001F0E7A /* OPDegreeLabel.swift */; };
 		A4D4842B2A0404F0001F0E7A /* OPImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D4842A2A0404F0001F0E7A /* OPImageView.swift */; };
 		A4D484312A041689001F0E7A /* OPSmallLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D484302A041689001F0E7A /* OPSmallLabel.swift */; };
+		A4F9D8E42A092D2B00D67E74 /* FortuneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F9D8E32A092D2B00D67E74 /* FortuneVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A4054B5C2A06F1F9007ACE98 /* OPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OPTextField.swift; sourceTree = "<group>"; };
-		A4121A102A067BE8008ABA03 /* OPButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OPButton.swift; sourceTree = "<group>"; };
+		A4121A102A067BE8008ABA03 /* OPSymbolButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OPSymbolButton.swift; sourceTree = "<group>"; };
 		A4121A142A068AFA008ABA03 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		A4121A182A068B7A008ABA03 /* HTTPMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethods.swift; sourceTree = "<group>"; };
 		A4121A1A2A068BA3008ABA03 /* ErrorTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTypes.swift; sourceTree = "<group>"; };
@@ -44,6 +48,9 @@
 		A4121A282A0697F4008ABA03 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		A45D08BE2A08332100E07522 /* WeatherConditionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherConditionsView.swift; sourceTree = "<group>"; };
 		A45D08C02A083FD900E07522 /* WeatherConditionsSecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherConditionsSecondView.swift; sourceTree = "<group>"; };
+		A45E38782A0A6426006A482A /* OPButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OPButton.swift; sourceTree = "<group>"; };
+		A45F04672A094FF7008B2A0B /* FortuneModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortuneModel.swift; sourceTree = "<group>"; };
+		A45F04692A0952A4008B2A0B /* OPMiddleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OPMiddleLabel.swift; sourceTree = "<group>"; };
 		A491C3852A07B5F000C22347 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A4D484032A03CAD4001F0E7A /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4D484062A03CAD4001F0E7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +62,7 @@
 		A4D484282A03FF38001F0E7A /* OPDegreeLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OPDegreeLabel.swift; sourceTree = "<group>"; };
 		A4D4842A2A0404F0001F0E7A /* OPImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OPImageView.swift; sourceTree = "<group>"; };
 		A4D484302A041689001F0E7A /* OPSmallLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OPSmallLabel.swift; sourceTree = "<group>"; };
+		A4F9D8E32A092D2B00D67E74 /* FortuneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortuneVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +88,8 @@
 		A4121A122A067C78008ABA03 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
-				A4121A102A067BE8008ABA03 /* OPButton.swift */,
+				A4121A102A067BE8008ABA03 /* OPSymbolButton.swift */,
+				A45E38782A0A6426006A482A /* OPButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -156,6 +165,32 @@
 			path = Subviews;
 			sourceTree = "<group>";
 		};
+		A45E38772A0A618A006A482A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A4D4840A2A03CAD4001F0E7A /* WeatherVC.swift */,
+				A4F9D8E32A092D2B00D67E74 /* FortuneVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A45E387A2A0A7246006A482A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A45E387B2A0A7255006A482A /* Models */,
+				A491C3842A07B59C00C22347 /* Constants */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A45E387B2A0A7255006A482A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A45F04672A094FF7008B2A0B /* FortuneModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		A491C3842A07B59C00C22347 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,7 +218,7 @@
 		A4D484052A03CAD4001F0E7A /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
-				A491C3842A07B59C00C22347 /* Constants */,
+				A45E387A2A0A7246006A482A /* Helpers */,
 				A4121A132A068AE5008ABA03 /* Networking */,
 				A4D4841F2A03D2D5001F0E7A /* Custom Views */,
 				A4D4841B2A03CB51001F0E7A /* Controllers */,
@@ -206,9 +241,9 @@
 		A4D4841B2A03CB51001F0E7A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A45E38772A0A618A006A482A /* ViewControllers */,
 				A45D08BD2A0832D800E07522 /* Subviews */,
 				A4121A252A069179008ABA03 /* WeatherVM */,
-				A4D4840A2A03CAD4001F0E7A /* WeatherVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -230,6 +265,7 @@
 				A4D484202A03D30C001F0E7A /* OPBigLabel.swift */,
 				A4D484282A03FF38001F0E7A /* OPDegreeLabel.swift */,
 				A4D484302A041689001F0E7A /* OPSmallLabel.swift */,
+				A45F04692A0952A4008B2A0B /* OPMiddleLabel.swift */,
 			);
 			path = Labels;
 			sourceTree = "<group>";
@@ -318,22 +354,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				A491C3862A07B5F000C22347 /* Constants.swift in Sources */,
+				A4F9D8E42A092D2B00D67E74 /* FortuneVC.swift in Sources */,
 				A4D484212A03D30C001F0E7A /* OPBigLabel.swift in Sources */,
 				A45D08BF2A08332100E07522 /* WeatherConditionsView.swift in Sources */,
 				A4054B5D2A06F1F9007ACE98 /* OPTextField.swift in Sources */,
 				A4121A1E2A068BD5008ABA03 /* APIConstants.swift in Sources */,
+				A45F046A2A0952A4008B2A0B /* OPMiddleLabel.swift in Sources */,
 				A4121A152A068AFA008ABA03 /* NetworkManager.swift in Sources */,
 				A4121A242A068CE4008ABA03 /* WeatherModel.swift in Sources */,
 				A4D4842B2A0404F0001F0E7A /* OPImageView.swift in Sources */,
+				A45F04682A094FF7008B2A0B /* FortuneModel.swift in Sources */,
 				A4D4840B2A03CAD4001F0E7A /* WeatherVC.swift in Sources */,
 				A4121A212A068CA1008ABA03 /* WeatherService.swift in Sources */,
 				A45D08C12A083FD900E07522 /* WeatherConditionsSecondView.swift in Sources */,
 				A4D484292A03FF38001F0E7A /* OPDegreeLabel.swift in Sources */,
-				A4121A112A067BE8008ABA03 /* OPButton.swift in Sources */,
+				A4121A112A067BE8008ABA03 /* OPSymbolButton.swift in Sources */,
 				A4D484312A041689001F0E7A /* OPSmallLabel.swift in Sources */,
 				A4D484072A03CAD4001F0E7A /* AppDelegate.swift in Sources */,
 				A4D484092A03CAD4001F0E7A /* SceneDelegate.swift in Sources */,
 				A4121A272A069186008ABA03 /* WeatherVM.swift in Sources */,
+				A45E38792A0A6426006A482A /* OPButton.swift in Sources */,
 				A4121A1B2A068BA3008ABA03 /* ErrorTypes.swift in Sources */,
 				A4121A292A0697F4008ABA03 /* LocationService.swift in Sources */,
 				A4121A192A068B7A008ABA03 /* HTTPMethods.swift in Sources */,

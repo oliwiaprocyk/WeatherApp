@@ -1,13 +1,13 @@
 //
-//  OPSmallLabel.swift
+//  OPMiddleLabel.swift
 //  WeatherApp
 //
-//  Created by Oliwia Procyk on 04/05/2023.
+//  Created by Oliwia Procyk on 08/05/2023.
 //
 
 import UIKit
 
-class OPSmallLabel: UILabel {
+class OPMiddleLabel: UILabel {
     override init(frame: CGRect) {
         super.init(frame: frame)
         configure()
@@ -24,10 +24,9 @@ class OPSmallLabel: UILabel {
     
     private func configure() {
         textAlignment = .center
-        textColor = .black
+        textColor = .secondaryLabel
         adjustsFontSizeToFitWidth = true
-        minimumScaleFactor = 0.70
+        minimumScaleFactor = 0.90
         lineBreakMode = .byTruncatingTail
     }
-
 }

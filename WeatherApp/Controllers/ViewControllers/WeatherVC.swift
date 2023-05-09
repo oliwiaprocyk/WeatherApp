@@ -11,9 +11,9 @@ import CoreLocation
 
 class WeatherVC: UIViewController {
     let locationManager = CLLocationManager()
-    let locationButton = OPButton(imageName: SFSymbols.locationButtonSymbol)
+    let locationButton = OPSymbolButton(imageName: SFSymbols.locationButtonSymbol)
     let locationTextField = OPTextField(frame: .zero)
-    let searchButton = OPButton(imageName: SFSymbols.searchButtonSymbol)
+    let searchButton = OPSymbolButton(imageName: SFSymbols.searchButtonSymbol)
     
     let backgroundImageView = UIImageView()
     let windImageView = OPImageView(systemName: SFSymbols.windSymbol, tintColor: .secondaryLabel, weight: .ultraLight)
@@ -25,6 +25,9 @@ class WeatherVC: UIViewController {
     
     let weatherConditionsView = WeatherConditionsView(frame: .zero)
     let weatherConditionsSecondView = WeatherConditionsSecondView(frame: .zero)
+    
+    let destinationVCLabel = OPMiddleLabel(fontSize: 20)
+    let destinationVCButton = OPSymbolButton(imageName: SFSymbols.destinationSymbol)
     
     let viewModel = WeatherVM()
     
@@ -38,6 +41,7 @@ class WeatherVC: UIViewController {
         configureWindAndRainBar()
         configureDegreeAndLocationLabels()
         configureViews()
+        configureDetailsItems()
         
         locationTextField.delegate = self
         locationManager.delegate = self
@@ -59,6 +63,8 @@ class WeatherVC: UIViewController {
         view.addSubview(locationLabel)
         view.addSubview(weatherConditionsView)
         view.addSubview(weatherConditionsSecondView)
+        view.addSubview(destinationVCLabel)
+        view.addSubview(destinationVCButton)
     }
     
     private func configureBackgroundImageView() {
@@ -73,19 +79,19 @@ class WeatherVC: UIViewController {
     private func configureLocationItems() {
         locationButton.snp.makeConstraints { make in
             make.leading.equalTo(view.snp.leading).offset(5)
-            make.top.equalToSuperview().offset(70)
+            make.top.equalToSuperview().offset(80)
             make.height.width.equalTo(40)
         }
         
         locationTextField.snp.makeConstraints { make in
             make.leading.equalTo(locationButton.snp.trailing).offset(5)
-            make.top.equalTo(view.snp.top).offset(70)
+            make.top.equalTo(view.snp.top).offset(80)
             make.trailing.equalTo(searchButton.snp.leading).offset(-5)
             make.height.equalTo(40)
         }
         
         searchButton.snp.makeConstraints { make in
-            make.top.equalTo(view.snp.top).offset(70)
+            make.top.equalTo(view.snp.top).offset(80)
             make.trailing.equalTo(view.snp.trailing).offset(-5)
             make.height.width.equalTo(40)
         }
@@ -138,21 +144,45 @@ class WeatherVC: UIViewController {
         weatherConditionsView.snp.makeConstraints { make in
             make.leading.equalToSuperview().offset(15)
             make.trailing.equalToSuperview().offset(-15)
-            make.top.equalTo(locationLabel.snp.bottom).offset(70)
+            make.top.equalTo(locationLabel.snp.bottom).offset(30)
             make.height.equalTo(130)
         }
         
         weatherConditionsSecondView.snp.makeConstraints { make in
             make.leading.equalTo(view.snp.leading).offset(40)
             make.trailing.equalTo(view.snp.trailing).offset(-40)
-            make.top.equalTo(weatherConditionsView.snp.bottom).offset(30)
+            make.top.equalTo(weatherConditionsView.snp.bottom).offset(20)
             make.height.equalTo(80)
+        }
+    }
+    
+    private func configureDetailsItems() {
+        destinationVCLabel.text = Labels.destionation
+        
+        destinationVCLabel.snp.makeConstraints { make in
+            make.trailing.equalTo(destinationVCButton.snp.leading)
+            make.bottom.equalToSuperview().offset(-25)
+            make.width.equalTo(300)
+            make.height.equalTo(30)
+        }
+        
+        destinationVCButton.snp.makeConstraints { make in
+            make.trailing.equalToSuperview().offset(-5)
+            make.bottom.equalToSuperview().offset(-15)
+            make.height.width.equalTo(50)
         }
     }
     
     private func configureButtonsAction() {
         locationButton.addTarget(self, action: #selector(locationButtonPressed), for: .touchUpInside)
         searchButton.addTarget(self, action: #selector(searchPressed), for: .touchUpInside)
+        destinationVCButton.addTarget(self, action: #selector(destinationVCButtonPressed), for: .touchUpInside)
+    }
+    
+    @objc private func destinationVCButtonPressed() {
+        let vc = FortuneVC()
+        navigationController?.navigationBar.tintColor = .secondaryLabel
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 
@@ -170,7 +200,7 @@ extension WeatherVC: UITextFieldDelegate {
         if textField.text != "" {
             return true
         } else {
-            textField.placeholder = "Type something"
+            textField.placeholder = "Type something "
             return false
         }
     }

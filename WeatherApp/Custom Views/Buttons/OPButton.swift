@@ -2,7 +2,7 @@
 //  OPButton.swift
 //  WeatherApp
 //
-//  Created by Oliwia Procyk on 06/05/2023.
+//  Created by Oliwia Procyk on 09/05/2023.
 //
 
 import UIKit
@@ -17,14 +17,10 @@ class OPButton: UIButton {
         fatalError("init(coder:) has not been implemented")
     }
     
-    convenience init(imageName: String) {
-        self.init(frame: .zero)
-        let configuration = UIImage.SymbolConfiguration(pointSize: 30)
-        setPreferredSymbolConfiguration(configuration, forImageIn: .normal)
-        setImage(UIImage(systemName: imageName), for: .normal)
-    }
-    
     private func configure() {
-        tintColor = .secondaryLabel
+        setTitle("Let's draw! ✨", for: .normal)
+        backgroundColor = .lightGray
+        alpha = 0.6
+        layer.cornerRadius = 10
     }
 }

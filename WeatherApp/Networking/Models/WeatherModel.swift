@@ -8,11 +8,17 @@
 import Foundation
 
 struct WeatherModel: Codable {
+    let coord: Coord?
     let name: String?
     let main: Main?
     let visibility: Int?
     let wind: Wind?
     let clouds: Clouds?
+}
+
+struct Coord: Codable {
+    let lon: Double?
+    let lat: Double?
 }
 
 struct Main: Codable {

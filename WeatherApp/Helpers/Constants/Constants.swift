@@ -20,6 +20,8 @@ enum SFSymbols {
     static let visibilitySymbol = "eye"
     static let humiditySymbol = "humidity"
     static let pressureSymbol = "thermometer.high"
+    static let destinationSymbol = "face.smiling"
+    static let background = "cloud.fill"
 }
 
 enum Images {
@@ -35,4 +37,7 @@ enum Labels {
     static let visibility = "Visibility"
     static let humidity = "Humidity"
     static let pressure = "Pressure"
+    static let destionation = "To draw a sentence for today, tap me"
+    static let fortune = "🧚🏻‍♂️ Click the button to see a fortune 🧚🏻‍♂️"
+    static let aFortune = "Are you ready?"
 }
