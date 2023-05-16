@@ -47,7 +47,7 @@ class FortuneVC: UIViewController {
         
         fortuneLabel.snp.makeConstraints { make in
             make.leading.equalToSuperview().offset(20)
-            make.top.equalToSuperview().offset(270)
+            make.top.equalToSuperview().offset(200)
             make.trailing.equalToSuperview().offset(-20)
             make.height.equalTo(30)
         }

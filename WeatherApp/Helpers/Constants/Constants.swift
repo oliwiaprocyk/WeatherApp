@@ -41,3 +41,8 @@ enum Labels {
     static let fortune = "🧚🏻‍♂️ Click the button to see a fortune 🧚🏻‍♂️"
     static let aFortune = "Are you ready?"
 }
+
+enum ReuseIDs {
+    static let tableViewCell = "DetailsTableViewCell"
+    static let collectionViewCell = "DetailsCollectionViewCell"
+}

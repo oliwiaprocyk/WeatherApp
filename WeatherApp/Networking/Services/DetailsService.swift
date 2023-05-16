@@ -1,21 +1,21 @@
 //
-//  WeatherService.swift
+//  DetailsService.swift
 //  WeatherApp
 //
-//  Created by Oliwia Procyk on 06/05/2023.
+//  Created by Oliwia Procyk on 12/05/2023.
 //
 
 import Foundation
 
-class WeatherService {
-    static let shared = WeatherService()
+class DetailsService {
+    static let shared = DetailsService()
     private init(){}
     
-    func getWeather(cityName: String, completion: @escaping((WeatherModel?, String?)->())) {
+    func getDetails(cityName: String, completion: @escaping((DetailsModel?, String?)->())) {
         
-        let urlString = "\(APIConstants.baseURL)?appid=\(APIConstants.apiKEY)\(APIConstants.unitMetric)&q=\(cityName)"
+        let urlString = "\(APIConstants.baseUrl)?key=\(APIConstants.apiKey)&q=\(cityName)\(APIConstants.apiEndPoint)"
         
-        NetworkManager.shared.request(type: WeatherModel.self,
+        NetworkManager.shared.request(type: DetailsModel.self,
                                       url: urlString,
                                       method: HTTPMethods.get) { response in
             switch response {

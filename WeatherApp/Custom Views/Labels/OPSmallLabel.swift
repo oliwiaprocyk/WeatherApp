@@ -29,5 +29,4 @@ class OPSmallLabel: UILabel {
         minimumScaleFactor = 0.70
         lineBreakMode = .byTruncatingTail
     }
-
 }

@@ -26,7 +26,7 @@ class OPBigLabel: UILabel {
         textAlignment = .center
         textColor = .secondaryLabel
         adjustsFontSizeToFitWidth = true
-        minimumScaleFactor = 0.90
+        minimumScaleFactor = 0.80
         lineBreakMode = .byTruncatingTail
     }
 }
