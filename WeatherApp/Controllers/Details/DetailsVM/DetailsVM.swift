@@ -23,7 +23,7 @@ final class DetailsVM {
             
             if let results = response?.forecast.forecastday {
                 for i in results {
-                    details.append(contentsOf: i.hour)
+                    self.details.append(contentsOf: i.hour)
                 }
                 self.delegate?.success()
             } else {
