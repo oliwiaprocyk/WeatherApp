@@ -51,7 +51,7 @@ class WeatherVC: UIViewController {
         viewModel.delegate = self
         navigationController?.navigationBar.tintColor = .secondaryLabel
     }
-    
+        
     private func addSubviews() {
         view.addSubview(backgroundImageView)
         view.addSubview(locationButton)
