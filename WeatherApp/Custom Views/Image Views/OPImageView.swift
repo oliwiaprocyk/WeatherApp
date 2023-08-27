@@ -7,7 +7,7 @@
 
 import UIKit
 
-class OPImageView: UIImageView {    
+final class OPImageView: UIImageView {    
     convenience init(systemName: String, tintColor: UIColor, weight: UIImage.SymbolWeight) {
         self.init(frame: .zero)
         let configuration = UIImage.SymbolConfiguration(weight: weight)

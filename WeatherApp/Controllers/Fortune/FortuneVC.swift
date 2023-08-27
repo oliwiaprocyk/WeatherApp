@@ -8,12 +8,12 @@
 import UIKit
 import SnapKit
 
-class FortuneVC: UIViewController {
-    let backgroundImageView = UIImageView()
-    let fortuneLabel = OPMiddleLabel(fontSize: 20)
-    let backgroundView = OPImageView(systemName: SFSymbols.background, tintColor: .lightGray, weight: .thin)
-    let aFortuneLabel = OPSmallLabel(fontSize: 25)
-    let fortuneButton = OPButton(frame: .zero)
+final class FortuneVC: UIViewController {
+    private let backgroundImageView = UIImageView()
+    private let fortuneLabel = OPMiddleLabel(fontSize: 20)
+    private let backgroundView = OPImageView(systemName: SFSymbols.background, tintColor: .lightGray, weight: .thin)
+    private let aFortuneLabel = OPSmallLabel(fontSize: 25)
+    private let fortuneButton = OPButton(frame: .zero)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -91,6 +91,8 @@ class FortuneVC: UIViewController {
     }
     
     @objc private func fortuneButtonTapped() {
-        self.aFortuneLabel.text = FortuneModel().fortunes[Int.random(in: 0...67)]
+        let fortunes = FortuneModel().fortunes
+        self.aFortuneLabel.text = fortunes[Int.random(in:
+        0...(fortunes.count - 1))]
     }
 }

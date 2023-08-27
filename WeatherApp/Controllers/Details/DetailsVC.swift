@@ -8,10 +8,10 @@
 import UIKit
 import SnapKit
 
-class DetailsVC: UIViewController {
-    let backgroundImageView = UIImageView()
-    let tableView = UITableView()
-    let viewModel = DetailsVM()
+final class DetailsVC: UIViewController {
+    private let backgroundImageView = UIImageView()
+    private let tableView = UITableView()
+    private let viewModel = DetailsVM()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,7 +47,7 @@ class DetailsVC: UIViewController {
         view.addSubview(tableView)
         
         tableView.register(DetailsTableViewCell.self, forCellReuseIdentifier: ReuseIDs.tableViewCell)
-        tableView.isScrollEnabled = false
+        tableView.isScrollEnabled = true
         tableView.snp.makeConstraints { make in
             make.leading.top.trailing.bottom.equalToSuperview()
         }

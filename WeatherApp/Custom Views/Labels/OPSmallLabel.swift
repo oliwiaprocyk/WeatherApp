@@ -7,7 +7,7 @@
 
 import UIKit
 
-class OPSmallLabel: UILabel {
+final class OPSmallLabel: UILabel {
     override init(frame: CGRect) {
         super.init(frame: frame)
         configure()

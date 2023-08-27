@@ -7,7 +7,7 @@
 
 import UIKit
 
-class OPSymbolButton: UIButton {
+final class OPSymbolButton: UIButton {
     override init(frame: CGRect) {
         super.init(frame: frame)
         configure()

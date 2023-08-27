@@ -7,7 +7,7 @@
 
 import UIKit
 
-class OPBigLabel: UILabel {
+final class OPBigLabel: UILabel {
     override init(frame: CGRect) {
         super.init(frame: frame)
         configure()

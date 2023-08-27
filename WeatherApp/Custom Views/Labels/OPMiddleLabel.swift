@@ -7,7 +7,7 @@
 
 import UIKit
 
-class OPMiddleLabel: UILabel {
+final class OPMiddleLabel: UILabel {
     override init(frame: CGRect) {
         super.init(frame: frame)
         configure()

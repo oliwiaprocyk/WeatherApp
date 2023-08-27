@@ -7,7 +7,7 @@
 
 import Foundation
 
-class DetailsService {
+final class DetailsService {
     static let shared = DetailsService()
     private init(){}
     

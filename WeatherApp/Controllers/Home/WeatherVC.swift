@@ -9,28 +9,28 @@ import UIKit
 import SnapKit
 import CoreLocation
 
-class WeatherVC: UIViewController {
-    let locationManager = CLLocationManager()
-    let locationButton = OPSymbolButton(imageName: SFSymbols.locationButtonSymbol)
-    let locationTextField = OPTextField(frame: .zero)
-    let searchButton = OPSymbolButton(imageName: SFSymbols.searchButtonSymbol)
+final class WeatherVC: UIViewController {
+    private let locationManager = CLLocationManager()
+    private let locationButton = OPSymbolButton(imageName: SFSymbols.locationButtonSymbol)
+    private let locationTextField = OPTextField(frame: .zero)
+    private let searchButton = OPSymbolButton(imageName: SFSymbols.searchButtonSymbol)
     
-    let backgroundImageView = UIImageView()
-    let windImageView = OPImageView(systemName: SFSymbols.windSymbol, tintColor: .secondaryLabel, weight: .ultraLight)
-    let windLabel = OPBigLabel(fontSize: 30)
-    let rainImageView = OPImageView(systemName: SFSymbols.rainSymbol, tintColor: .secondaryLabel, weight: .ultraLight)
-    let rainLabel = OPBigLabel(fontSize: 30)
-    let degreeLabel = OPDegreeLabel(frame: .zero)
-    let locationLabel = OPBigLabel(fontSize: 30)
+    private let backgroundImageView = UIImageView()
+    private let windImageView = OPImageView(systemName: SFSymbols.windSymbol, tintColor: .secondaryLabel, weight: .ultraLight)
+    private let windLabel = OPBigLabel(fontSize: 30)
+    private let rainImageView = OPImageView(systemName: SFSymbols.rainSymbol, tintColor: .secondaryLabel, weight: .ultraLight)
+    private let rainLabel = OPBigLabel(fontSize: 30)
+    private let degreeLabel = OPDegreeLabel(frame: .zero)
+    private let locationLabel = OPBigLabel(fontSize: 30)
     
-    let weatherConditionsView = WeatherConditionsView(frame: .zero)
-    let weatherConditionsSecondView = WeatherConditionsSecondView(frame: .zero)
+    private let weatherConditionsView = WeatherConditionsView(frame: .zero)
+    private let weatherConditionsSecondView = WeatherConditionsSecondView(frame: .zero)
     
-    let detailsVCButton = UIButton()
-    let destinationVCLabel = OPMiddleLabel(fontSize: 20)
-    let destinationVCButton = OPSymbolButton(imageName: SFSymbols.destinationSymbol)
+    private let detailsVCButton = UIButton()
+    private let destinationVCLabel = OPMiddleLabel(fontSize: 20)
+    private let destinationVCButton = OPSymbolButton(imageName: SFSymbols.destinationSymbol)
     
-    let viewModel = WeatherVM()
+    private let viewModel = WeatherVM()
     
     override func viewDidLoad() {
         super.viewDidLoad()

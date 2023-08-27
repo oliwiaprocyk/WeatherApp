@@ -7,7 +7,7 @@
 
 import UIKit
 
-class WeatherConditionsView: UIView {
+final class WeatherConditionsView: UIView {
     let feelsLikeImageView = OPImageView(systemName: SFSymbols.feelsLikeSymbol, tintColor: .white, weight: .light)
     let feelsLikeLabel = OPSmallLabel(fontSize: 16)
     let feelsLikeDegreeLabel = OPSmallLabel(fontSize: 16)

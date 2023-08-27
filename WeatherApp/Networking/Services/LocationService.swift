@@ -8,7 +8,7 @@
 import Foundation
 import CoreLocation
 
-class LocationService {
+final class LocationService {
     static let shared = LocationService()
     private init(){}
     

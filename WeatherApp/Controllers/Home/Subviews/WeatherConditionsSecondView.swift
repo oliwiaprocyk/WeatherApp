@@ -7,7 +7,7 @@
 
 import UIKit
 
-class WeatherConditionsSecondView: UIView {
+final class WeatherConditionsSecondView: UIView {
     let humidityImageView = OPImageView(systemName: SFSymbols.humiditySymbol, tintColor: .white, weight: .medium)
     let humidityLabel = OPSmallLabel(fontSize: 20)
     let humidityLevelLabel = OPSmallLabel(fontSize: 20)

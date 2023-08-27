@@ -109,7 +109,6 @@
 		A4121A132A068AE5008ABA03 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				A4121A222A068CD7008ABA03 /* Models */,
 				A4121A1F2A068C88008ABA03 /* Services */,
 				A4121A1C2A068BC4008ABA03 /* APIConstants */,
 				A4121A172A068B63008ABA03 /* Enums */,
@@ -270,6 +269,7 @@
 			children = (
 				A45E387A2A0A7246006A482A /* Helpers */,
 				A4121A132A068AE5008ABA03 /* Networking */,
+				A4121A222A068CD7008ABA03 /* Models */,
 				A4D4841F2A03D2D5001F0E7A /* Custom Views */,
 				A4D4841B2A03CB51001F0E7A /* Controllers */,
 				A4D4841A2A03CB26001F0E7A /* App */,
