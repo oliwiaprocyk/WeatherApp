@@ -8,9 +8,8 @@
 import UIKit
 import SnapKit
 
-class DetailsTableViewCell: UITableViewCell {    
+final class DetailsTableViewCell: UITableViewCell {    
     let backgroundImageView = UIImageView()
-    let data = OPMiddleLabel(fontSize: 20)
     var collectionView: UICollectionView!
     var details: [Hour] = []
     var section: Int?

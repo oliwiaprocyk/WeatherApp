@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class DetailsCollectionViewCell: UICollectionViewCell {    
+final class DetailsCollectionViewCell: UICollectionViewCell {
     let hourLabel = OPMiddleLabel(fontSize: 20)
     let degreeLabel = OPBigLabel(fontSize: 50)
     let textLabel = OPMiddleLabel(fontSize: 16)
